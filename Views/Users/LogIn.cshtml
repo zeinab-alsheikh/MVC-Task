@@ -1,0 +1,23 @@
+﻿@model User
+
+
+<h1>Log In</h1>
+
+
+<form asp-controller="Users" asp-action="LogIn">
+
+	<div class="text-danger">@ViewBag.Error</div>
+	<div class="my-3">
+		<label asp-for="UserName"></label>
+		<input asp-for="UserName" class="form-control" />
+	</div>
+
+
+	<div class="my-3">
+		<label asp-for="Password"></label>
+		<input asp-for="Password" class="form-control" />
+	</div>
+
+
+	<button class="btn btn-outline-primary"> Log In </button>
+</form>
